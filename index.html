@@ -1,5 +1,5 @@
 ---
-title: omnio.us - web design and development
+title: development
 ---
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@ title: omnio.us - web design and development
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{title}}</title>
+    <title>omnio.us {{title}} - web design and development</title>
   </head>
   <body>
     <!-- theme switch -->
@@ -27,20 +27,23 @@ title: omnio.us - web design and development
     <header>
       <img src="./img/menu/omnio_us-logo.png" alt="omnio.us logo" />
       <nav>
-        <li>development</li>
-        <!-- <li><a href="index.html">development</a></li> -->
+        <li><a href="index.html" class="active">development</a></li>
         <li><a href="design.html">design</a></li>
         <li><a href="art">art</a></li>
       </nav>
     </header>
     <hr />
     <main>
+      {% for job in dev.dev.jobs %}
       <article>
         <section class="top">
-          <img
+          <!-- <img
             src="./img/canon-imagina10n-takeover.png"
             alt="Canon Imagina10n homepage takeover"
-          />
+          /> -->
+          <img src="{{job.video.poster}}" alt="{{job.video.alt}}" />
+          <!-- <img src="{{job.image.src}}" alt="{{job.image.alt}}" /> -->
+
           <section class="story">
             <h1>Project Imagina10n</h1>
             <h2>Canon</h2>
@@ -77,6 +80,7 @@ title: omnio.us - web design and development
         </section>
         <hr />
       </article>
+      {% endfor %}
     </main>
     <footer>
       <input
