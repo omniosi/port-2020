@@ -27,6 +27,9 @@ title: development
     <header>
       <img src="./img/menu/omnio_us-logo.png" alt="omnio.us logo" />
       <nav>
+        {% for post in Collections.all %}
+        <li><a href="{{post.url}}">post.url = {{post.url}}</a></li>
+        {% endfor %}
         <li><a href="index.html" class="active">development</a></li>
         <li><a href="design.html">design</a></li>
         <li><a href="art">art</a></li>
@@ -41,8 +44,11 @@ title: development
             src="./img/canon-imagina10n-takeover.png"
             alt="Canon Imagina10n homepage takeover"
           /> -->
+          {% if job.video %}
           <img src="{{job.video.poster}}" alt="{{job.video.alt}}" />
-          <!-- <img src="{{job.image.src}}" alt="{{job.image.alt}}" /> -->
+          {% endif %} {% if job.image %}
+          <img src="{{job.image.src}}" alt="{{job.image.alt}}" />
+          {% endif %}
 
           <section class="story">
             <h1>{{job.title}}</h1>
