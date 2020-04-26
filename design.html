@@ -1,5 +1,5 @@
 ---
-title: development
+title: design
 ---
 
 <!DOCTYPE html>
@@ -24,24 +24,16 @@ title: development
     <header>
       <img src="./img/menu/omnio_us-logo.png" alt="omnio.us logo" />
       <nav>
-        {% for post in Collections.all %}
-        <li><a href="{{post.url}}">post.url = {{post.url}}</a></li>
-        {% endfor %}
-        <li><a href="index.html" class="active">development</a></li>
-        <li><a href="design.html">design</a></li>
+        <li><a href="index.html">development</a></li>
+        <li><a href="design.html" class="active">design</a></li>
         <li><a href="art.html">art</a></li>
-        <li><a href="sound.html">sound</a></li>
       </nav>
     </header>
     <hr />
     <main>
-      {% for job in dev.jobs %}
+      {% for job in des.jobs %}
       <article>
         <section class="top">
-          <!-- <img
-            src="./img/canon-imagina10n-takeover.png"
-            alt="Canon Imagina10n homepage takeover"
-          /> -->
           {% if job.video %}
           <img src="{{job.video.poster}}" alt="{{job.video.alt}}" />
           {% endif %} {% if job.image %}
@@ -84,18 +76,6 @@ title: development
         checked
       />
       <label for="ft-select">Dark theme</label>
-
-      <!-- theme switch -->
-      <!-- <input type="checkbox" id="theme" checked />
-    <label class="toggle-switch" for="theme">
-      <div class="toggle-screenreader">Theme switcher</div>
-      <span>
-        <span class="icon moon">dark</span>
-        <span class="icon sun">light</span>
-      </span>
-    </label> -->
-      <!-- theme switch end -->
-
       <p>©2020 Ornette Coleman</p>
       <nav>
         <li class="resume">
