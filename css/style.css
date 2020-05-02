@@ -3,4 +3,15 @@ body {
   color: white;
 }
 
+hr {
+  border-top: 1px solid black;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+header hr {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

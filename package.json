@@ -8,8 +8,10 @@
     "11ty": "npx @11ty/eleventy",
     "11ts": "npx @11ty/eleventy --serve",
     "sass": "sass css/style.scss css/style.css",
-    "sassw": "sass --watch css/style.scss css/style.css",
-    "work": "npm run sassw && 11ts"
+    "sassw": "sass --watch css/style.scss _site/style.css",
+    "work": "npm run sassw && 11ts",
+    "copy": "cp css/style.css _site/style.css",
+    "style": "npm run sassw && copy"
   },
   "keywords": [],
   "author": "",
