@@ -21,16 +21,8 @@ title: art
     </label> -->
     <!-- theme switch end -->
 
-    <header>
-      <img src="../img/menu/omnio_us-logo.png" alt="omnio.us logo" />
-      <nav>
-        <li><a href="/">development</a></li>
-        <li><a href="/design/">design</a></li>
-        <li><a href="/art/" class="active">art</a></li>
-        <li><a href="/sound/">sound</a></li>
-      </nav>
-    </header>
-    <hr />
+    {% include header.html %}
+
     <main>
       {% for job in art.jobs %}
       <article>
@@ -69,32 +61,7 @@ title: art
       </article>
       {% endfor %}
     </main>
-    <footer>
-      <input
-        type="checkbox"
-        name="footer theme select"
-        id="ft-select"
-        checked
-      />
-      <label for="ft-select">Dark theme</label>
-      <p>©2020 Ornette Coleman</p>
-      <nav>
-        <li class="resume">
-          <a href="#resume">
-            resume
-          </a>
-        </li>
-        <li class="linkedin">
-          <a href="#linkedin">
-            linkedin
-          </a>
-        </li>
-        <li class="github">
-          <a href="#github">
-            github
-          </a>
-        </li>
-      </nav>
-    </footer>
+
+    {% include footer.html %}
   </body>
 </html>
