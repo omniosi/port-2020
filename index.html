@@ -22,7 +22,7 @@ title: development
     </label> -->
     <!-- theme switch end -->
 
-    <header>
+    <!-- <header>
       <img src="./img/menu/omnio_us-logo.png" alt="omnio.us logo" />
       <nav>
         <li><a href="/" class="active">development</a></li>
@@ -31,7 +31,9 @@ title: development
         <li><a href="/sound/">sound</a></li>
       </nav>
     </header>
-    <hr />
+    <hr /> -->
+
+    {% include header.html %}
     <main>
       {% for job in dev.jobs %}
       <article>

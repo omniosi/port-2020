@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "11ty": "npx @11ty/eleventy",
+    "11ts": "npx @11ty/eleventy --serve",
+    "sass": "sass css/style.scss css/style.css",
+    "sassw": "sass --watch css/style.scss css/style.css",
+    "work": "npm run sassw && 11ts"
   },
   "keywords": [],
   "author": "",
