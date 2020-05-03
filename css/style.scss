@@ -11,6 +11,7 @@ $blue-3: #003263;
 
   &::before{
     content: ":";
+    padding-right: 1px;
   }
 }
 
@@ -36,25 +37,29 @@ article{
 header{
   background-color: $blue-1;
   box-shadow: 0 3px 10px $blue-3;
-
-  a{
-
-  }
+  position: sticky;
+  top: 0;
+  border-radius: 0 0 16px 16px;
 }
 nav{
   list-style: none;
-  // display: inline-block;
+  padding: 0 3px;
 
   li{
     display: inline-block;
+    padding-right: 12px;
 
     &.active{
       a{
         color: $blue-0;
       }
-  }
+    }
     a{
       color: $blue-2;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: bold;
+      text-decoration: none;
 
       &:visited:not(&.active){
         color: $blue-3;
@@ -68,4 +73,6 @@ article{
 }
 footer{
   background-color: $blue-3;
+  position: sticky;
+  bottom: 0;
 }
