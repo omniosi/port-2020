@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+
 $blue-0: #C8E4F1;
 $blue-1: #00a4e4;
 $blue-2: #0058AD;
 $blue-3: #003263;
 
-.active{
+.active {
   pointer-events: none;
+  // color: $blue-0;
+
+  &::before{
+    content: ":";
+  }
 }
 
 body {
@@ -12,6 +19,7 @@ body {
   color: $blue-0;
   margin: 0;
   padding: 0;
+  font-family: 'Asap', sans-serif;
 }
 
 hr {
@@ -28,13 +36,36 @@ article{
 header{
   background-color: $blue-1;
   box-shadow: 0 3px 10px $blue-3;
+
+  a{
+
+  }
+}
+nav{
+  list-style: none;
+  // display: inline-block;
+
+  li{
+    display: inline-block;
+
+    &.active{
+      a{
+        color: $blue-0;
+      }
+  }
+    a{
+      color: $blue-2;
+
+      &:visited:not(&.active){
+        color: $blue-3;
+      }
+    }
+  }
 }
 article{
+  padding-top: 32px;
   border-bottom: 1px solid $blue-1;
 }
 footer{
   background-color: $blue-3;
-}
-img{
-  margin-top: 16px;
 }
