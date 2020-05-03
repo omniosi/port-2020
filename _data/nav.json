@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "title": "development",
+      "url": "/"
+    },
+    {
+      "title": "design",
+      "url": "/design/"
+    },
+    {
+      "title": "art",
+      "url": "/art/"
+    },
+    {
+      "title": "sound",
+      "url": "/sound/"
+    }
+  ]
+}

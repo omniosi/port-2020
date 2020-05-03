@@ -3,6 +3,10 @@ $blue-1: #00a4e4;
 $blue-2: #0058AD;
 $blue-3: #003263;
 
+.active{
+  pointer-events: none;
+}
+
 body {
   background-color: $blue-2;
   color: $blue-0;

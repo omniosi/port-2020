@@ -1,10 +1,9 @@
 <header>
-  <img src="./img/menu/omnio_us-logo.png" alt="omnio.us logo" />
+  <img src="/img/menu/omnio_us-logo.png" alt="omnio.us logo" />
   <nav>
-    <li><a href="/" class="active">development</a></li>
-    <li><a href="/design/">design</a></li>
-    <li><a href="/art/">art</a></li>
-    <li><a href="/sound/">sound</a></li>
+    {% for item in nav.pages %}
+    <li {% if item.url == page.url %} class="active"{% endif %}><a href="{{item.url}}">{{item.title}}</a></li>
+    {% endfor %}
   </nav>
 </header>
 <hr />

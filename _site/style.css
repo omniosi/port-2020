@@ -1,3 +1,7 @@
+.active {
+  pointer-events: none;
+}
+
 body {
   background-color: #0058AD;
   color: #C8E4F1;
