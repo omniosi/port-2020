@@ -94,9 +94,47 @@ article{
   }
 }
 footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: $blue-3;
   position: sticky;
   bottom: 0;
+
+  p{
+    font-size: 12px;
+    color: $blue-1;
+    padding: 0 8px;
+  }
+
+  nav{
+    width: 40%;
+    padding: 8px 0 8px 8px;
+
+    li{
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+
+      a{
+        &.resume{
+          &:before{
+            content: url(../img/svg/menu/buttons/icon/file-solid.svg);
+          }
+        }
+        &.linkedin{
+          &:before{
+            content: url(../img/svg/menu/buttons/icon/linkedin-brands.svg);
+          }
+        }
+        &.github{
+          &:before{
+            content: url(../img/svg/menu/buttons/icon/github-brands.svg);
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width:"768px") {
