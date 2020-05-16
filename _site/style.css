@@ -23,9 +23,8 @@ hr {
 }
 
 header,
-footer,
-article {
-  padding: 16px;
+footer {
+  padding: 8px;
 }
 
 header {
@@ -36,7 +35,7 @@ header {
   box-shadow: 0 3px 10px #003263;
   position: sticky;
   top: 0;
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 8px 8px;
 }
 
 nav {
@@ -61,8 +60,12 @@ nav li a:visited:not(nav li a.active) {
 }
 
 article {
+  padding: 16px;
   padding-top: 32px;
   border-bottom: 1px solid #00a4e4;
+}
+article section img {
+  width: 100%;
 }
 
 footer {
