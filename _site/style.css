@@ -29,6 +29,9 @@ article {
 }
 
 header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: #00a4e4;
   box-shadow: 0 3px 10px #003263;
   position: sticky;
@@ -37,12 +40,11 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: space-evenly;
   list-style: none;
   padding: 0 3px;
-}
-nav li {
-  display: inline-block;
-  padding-right: 12px;
+  width: 100%;
 }
 nav li.active a {
   color: #C8E4F1;
@@ -67,6 +69,12 @@ footer {
   background-color: #003263;
   position: sticky;
   bottom: 0;
+}
+
+@media (min-width: 768px) {
+  header nav {
+    width: 45%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

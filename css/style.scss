@@ -35,6 +35,9 @@ article{
   padding: 16px;
 }
 header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: $blue-1;
   box-shadow: 0 3px 10px $blue-3;
   position: sticky;
@@ -42,12 +45,13 @@ header{
   border-radius: 0 0 16px 16px;
 }
 nav{
+  display: flex;
+  justify-content: space-evenly;
   list-style: none;
   padding: 0 3px;
+  width: 100%;
 
   li{
-    display: inline-block;
-    padding-right: 12px;
 
     &.active{
       a{
@@ -75,4 +79,13 @@ footer{
   background-color: $blue-3;
   position: sticky;
   bottom: 0;
+}
+
+@media (min-width:"768px") {
+  header{
+    nav{
+      width: 45%;
+    }
+  }
+
 }
