@@ -39,16 +39,13 @@ hr {
   border-width: 0.5px;
   display: none;
 }
-header,
-footer{
-  padding: 8px;
-}
 header{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: $blue-1;
   box-shadow: 0 3px 10px $blue-3;
+  padding: 8px;
   position: sticky;
   top: 0;
   border-radius: 0 0 8px 8px;
@@ -119,21 +116,18 @@ footer{
       overflow: hidden;
 
       a{
-        &.resume{
-          &:before{
-            content: url(../img/svg/menu/buttons/icon/file-solid.svg);
-            fill: $blue-1;
-          }
+        color: $blue-1;
+
+        &:focus,
+        &:hover{
+          color: $blue-0;
         }
-        &.linkedin{
-          &:before{
-            content: url(../img/svg/menu/buttons/icon/linkedin-brands.svg);
-          }
+        &:visited{
+          color: $blue-3;
         }
-        &.github{
-          &:before{
-            content: url(../img/svg/menu/buttons/icon/github-brands.svg);
-          }
+
+        svg{
+          fill: currentColor;
         }
       }
     }
