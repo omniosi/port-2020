@@ -31,8 +31,15 @@ title: development
       <article>
         <section class="top">
           {% if job.video %}
-          <img src="{{job.video.poster}}" alt="{{job.video.alt}}" />
-          {% endif %} {% if job.image %}
+          <video autoplay loop poster="{{job.video.poster}}">
+            {% for source in job.video.source %}
+            <source src="{{source.src}}"
+                    type="{{source.type}}">
+            {% endfor %}
+            {{job.video.alt}} - Sorry, your browser doesn't support embedded videos.
+        </video>
+          {% endif %}
+          {% if job.image %}
           <img src="{{job.image.src}}" alt="{{job.image.alt}}" />
           {% endif %}
 

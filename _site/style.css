@@ -70,8 +70,9 @@ article {
   padding-top: 32px;
   border-bottom: 1px solid #00a4e4;
 }
+article section video,
 article section img {
-  width: 100%;
+  max-width: 100%;
 }
 
 footer {
