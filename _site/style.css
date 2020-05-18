@@ -79,6 +79,23 @@ article section img {
   width: 100%;
   max-width: 530px;
 }
+article section button {
+  color: #003263;
+  background: #00a4e4;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 16px 0 8px;
+  font-size: 14px;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+article section button:focus, article section button:hover {
+  color: #00a4e4;
+  background: #0058AD;
+}
 
 footer {
   display: flex;
