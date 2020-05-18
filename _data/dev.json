@@ -104,6 +104,10 @@
       "type": "Website Design & Front-End Development",
       "link": null,
       "linktext": null,
+      "image": {
+        "src": "img/530w/earwormsMBT_ui.jpg",
+        "alt": "earwormsMBT interactive mixer micro-site"
+      },
       "video": {
         "alt": "earwormsMBT interactive mixer micro-site",
         "poster": "img/530w/earwormsMBT_ui.jpg",

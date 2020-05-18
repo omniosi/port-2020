@@ -23,6 +23,9 @@ $blue-3: #003263;
     padding-right: 1px;
   }
 }
+.hide{
+  display: none;
+}
 
 body {
   // background-color: $blue-2;
@@ -88,7 +91,8 @@ article{
 
     video,
     img{
-      max-width: 100%;
+      width: 100%;
+      max-width: 530px;
     }
   }
 }

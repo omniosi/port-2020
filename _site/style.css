@@ -16,6 +16,10 @@
   padding-right: 1px;
 }
 
+.hide {
+  display: none;
+}
+
 body {
   background-color: #003263;
   color: #C8E4F1;
@@ -72,7 +76,8 @@ article {
 }
 article section video,
 article section img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 530px;
 }
 
 footer {

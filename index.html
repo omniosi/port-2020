@@ -30,20 +30,25 @@ title: development
       {% for job in dev.jobs %}
       <article>
         <section class="top">
+          {% if job.image %}
+          <img src="{{job.image.src}}" alt="{{job.image.alt}}" />
+          {% endif %}
           {% if job.video %}
-          <video autoplay loop poster="{{job.video.poster}}">
+          <video class="hide" autoplay loop poster="{{job.video.poster}}">
             {% for source in job.video.source %}
             <source src="{{source.src}}"
                     type="{{source.type}}">
             {% endfor %}
             {{job.video.alt}} - Sorry, your browser doesn't support embedded videos.
-        </video>
-          {% endif %}
-          {% if job.image %}
-          <img src="{{job.image.src}}" alt="{{job.image.alt}}" />
+          </video>
           {% endif %}
 
           <section class="story">
+            {% if job.video %}
+            <button onclick="this.parentElement.previousElementSibling.previousElementSibling.classList='hide';this.parentElement.previousElementSibling.classList='';this.parentElement.previousElementSibling.currentTime=0;this.parentElement.previousElementSibling.play();this.nextElementSibling.classList='';this.classList='hide'" class="play">Play Video</button>
+            <button onclick="this.parentElement.previousElementSibling.previousElementSibling.classList='';this.parentElement.previousElementSibling.classList='hide';this.parentElement.previousElementSibling.pause();this.previousElementSibling.classList='';this.classList='hide'" class="stop hide">Stop Video</button>
+            {% endif %}
+
             <h1>{{job.title}}</h1>
             <h2>{{job.brand}}</h2>
             <p>
