@@ -69,9 +69,15 @@ nav li a:visited:not(nav li a.active) {
   color: #003263;
 }
 
+h1 {
+  color: #0058AD;
+  font-size: 16px;
+  padding: 0.5em 1em;
+  margin-bottom: 0;
+}
+
 article {
   padding: 16px;
-  padding-top: 32px;
   border-bottom: 1px solid #00a4e4;
 }
 article section video,
@@ -95,6 +101,21 @@ article section button {
 article section button:focus, article section button:hover {
   color: #00a4e4;
   background: #0058AD;
+}
+article section h2 {
+  font-size: 16px;
+  color: #00a4e4;
+  text-transform: uppercase;
+}
+article section h3 {
+  font-size: 32px;
+  text-transform: capitalize;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+article section p {
+  font-size: 16px;
+  line-height: 1.35;
 }
 
 footer {
