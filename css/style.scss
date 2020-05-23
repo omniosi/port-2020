@@ -99,7 +99,7 @@ h1{
   font-size: 15px;
   padding: 0.5em 1em;
   text-align: center;
-  max-width: 30em;
+  max-width: 32em;
   margin: 0 auto;
 }
 article{
@@ -152,6 +152,9 @@ article{
       font-size: 16px;
       line-height: 1.35;
     }
+    &.scope p{
+      color: $blue-1;
+    }
   }
 }
 footer{
@@ -201,6 +204,10 @@ footer{
     nav{
       width: 45%;
     }
+  }
+  section{
+    max-width: 530px;
+    margin: 0 auto;
   }
 
 }
