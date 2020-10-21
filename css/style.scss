@@ -71,7 +71,8 @@ nav{
   justify-content: space-evenly;
   list-style: none;
   padding: 0 3px;
-  width: 100%;
+  width: 290px;
+  margin: 0 auto;
 
   li{
 
@@ -205,6 +206,13 @@ footer{
       width: 45%;
     }
   }
+  section{
+    max-width: 530px;
+    margin: 0 auto;
+  }
+
+}
+@media (min-width:"930px") {
   section{
     max-width: 530px;
     margin: 0 auto;
