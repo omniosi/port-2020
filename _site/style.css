@@ -113,7 +113,7 @@ article section button {
   background: #00a4e4;
   border: none;
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 6px 14px;
   margin: 16px 0 8px;
   font-size: 14px;
   font-family: Asap, sans-serif;
@@ -162,8 +162,9 @@ footer p {
   padding: 0 8px;
 }
 footer nav {
-  width: 40%;
+  width: 100px;
   padding: 8px 0 8px 8px;
+  margin: 0;
 }
 footer nav li {
   width: 20px;
