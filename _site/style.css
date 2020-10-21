@@ -63,7 +63,9 @@ header {
   padding: 8px;
   position: sticky;
   top: 0;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 24px 24px;
+  margin: 0 auto;
+  width: 93%;
 }
 
 nav {
