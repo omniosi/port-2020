@@ -1,9 +1,11 @@
 <header>
-  <img src="/img/menu/omnio_us-logo.png" alt="omnio.us logo" />
-  <nav>
-    {% for item in nav.pages %}
-    <li {% if item.url == page.url %} class="active"{% endif %}><a href="{{item.url}}">{{item.title}}</a></li>
-    {% endfor %}
-  </nav>
+  <div class="content">
+    <img src="/img/menu/omnio_us-logo.png" alt="omnio.us logo" />
+    <nav>
+      {% for item in nav.pages %}
+      <li {% if item.url == page.url %} class="active"{% endif %}><a href="{{item.url}}">{{item.title}}</a></li>
+      {% endfor %}
+    </nav>
+  </div>
 </header>
 <hr />
