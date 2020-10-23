@@ -20,6 +20,7 @@ title: sound
     {% include header.html %}
 
     <main>
+      <h1>An avid music listener, Ornette Coleman expresses himself in sound for fun.</h1>
       {% for job in snd.jobs %}
       <article>
         <section class="top">
@@ -30,8 +31,8 @@ title: sound
           {% endif %}
 
           <section class="story">
-            <h1>{{job.title}}</h1>
-            <h2>{{job.brand}}</h2>
+            <h2>{{job.title}}</h2>
+            <h3>{{job.brand}}</h3>
             <p>
               {{job.story}}
             </p>
@@ -39,17 +40,17 @@ title: sound
         </section>
         <div class="bottom">
           <section class="scope">
-            <h1>Scope</h1>
+            <h4>Scope</h4>
             <p>{{job.type}}</p>
           </section>
           <section class="process">
-            <h1>Process</h1>
+            <h4>Process</h4>
             <p>
               {{job.process}}
             </p>
           </section>
           <section class="results">
-            <h1>Results</h1>
+            <h4>Results</h4>
             <p>
               {{job.results}}
             </p>
