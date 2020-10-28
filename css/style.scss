@@ -112,10 +112,16 @@ article{
 
   section{
 
+    &.story,
+    &.scope,
+    &.process,
+    &.results,
     video,
     img{
       width: 100%;
-      max-width: 530px;
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
     }
     button{
       color: $blue-3;
@@ -210,14 +216,18 @@ footer{
       // margin-left: 20%;
     }
     nav{
-      width: 30%;
+      // width: 30%;
+      width: 40%;
       margin: 0;
     }
+    .content{
+      width: 600px;
+    }
   }
-  section{
-    max-width: 530px;
-    margin: 0 auto;
-  }
+  // section{
+  //   max-width: 530px;
+  //   margin: 0 auto;
+  // }
 
 }
 @media (min-width:"910px") {
@@ -227,6 +237,7 @@ footer{
       justify-content: end;
       margin: 0 auto;
       width: 910px;
+      // width: 600px;
     }
     
     nav{
@@ -245,19 +256,32 @@ footer{
       img,video{
         // width: 600px;
         max-width: 65%;
+        margin: 0;
       }
       .story{
         // width: 300px;
-        width: 28%;
+        // width: 28%;
+        // width: 27%;
+        width: 30%;
+        margin: 0;
         
         p{
           margin-bottom: 0;
         }
       }
+      &.scope,
+      &.process,
+      &.results{
+        // width: 300px;
+        width: 30%;
+        margin: 0;
+      }
+
     }
     .top,.bottom{
       display: flex;
-      justify-content: space-evenly;
+      // justify-content: space-evenly;
+      justify-content: space-between;
       align-items: end;
       margin: 0 auto;
       max-width: 910px;
@@ -265,10 +289,6 @@ footer{
     .bottom{
       align-items: start;
       padding-top: 1em;
-    }
-    .scope,.process,.results{
-      // width: 300px;
-      width: 30%;
     }
   }
 

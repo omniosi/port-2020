@@ -104,10 +104,13 @@ article {
   padding-top: 32px;
   border-bottom: 1px solid #00a4e4;
 }
+article section.story, article section.scope, article section.process, article section.results,
 article section video,
 article section img {
   width: 100%;
-  max-width: 530px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
 }
 article section button {
   color: #003263;
@@ -190,13 +193,11 @@ footer nav li a svg {
     justify-content: center;
   }
   header nav {
-    width: 30%;
+    width: 40%;
     margin: 0;
   }
-
-  section {
-    max-width: 530px;
-    margin: 0 auto;
+  header .content {
+    width: 600px;
   }
 }
 @media (min-width: 910px) {
@@ -215,16 +216,22 @@ footer nav li a svg {
 
   article section img, article section video {
     max-width: 65%;
+    margin: 0;
   }
   article section .story {
-    width: 28%;
+    width: 30%;
+    margin: 0;
   }
   article section .story p {
     margin-bottom: 0;
   }
+  article section.scope, article section.process, article section.results {
+    width: 30%;
+    margin: 0;
+  }
   article .top, article .bottom {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: end;
     margin: 0 auto;
     max-width: 910px;
@@ -232,9 +239,6 @@ footer nav li a svg {
   article .bottom {
     align-items: start;
     padding-top: 1em;
-  }
-  article .scope, article .process, article .results {
-    width: 30%;
   }
 }
 
