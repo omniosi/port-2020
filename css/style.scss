@@ -40,6 +40,10 @@ body {
 
   a{
     color: $blue-1;
+    text-decoration: none;
+    
+    &:before{content:"<"}
+    &:after{content:">"}
 
     &:visited,
     &:hover,
@@ -51,7 +55,8 @@ body {
 
 hr {
   border-style: solid;
-  border-color: $blue-1;
+  // border-color: $blue-1;
+  border-color: rgba(255,255,255,0.5);
   border-width: 0.5px;
   display: none;
 }
@@ -90,6 +95,9 @@ nav{
       font-weight: bold;
       letter-spacing: 0.04em;
       text-decoration: none;
+      
+      &:before{content:""}
+      &:after{content:""}
 
       &:visited:not(&.active){
         color: $blue-3;
@@ -98,8 +106,9 @@ nav{
   }
 }
 h1{
-  color: $blue-2;
+  color: $blue-1;
   font-size: 15px;
+  font-weight: 400;
   padding: 0.5em 1em;
   text-align: center;
   // max-width: 32em;
@@ -108,8 +117,13 @@ h1{
 article{
   padding: 16px;
   padding-top: 32px;
-  border-bottom: 1px solid $blue-1;
-
+  // border-bottom: 1px solid $blue-2;
+  border-top: 1px solid $blue-2;
+  // border-top: 1px solid $blue-1;
+  // border-bottom: 1px solid rgba(255,255,255,0.5);
+  // border-top: 2px solid rgba(0,0,0,0.35);
+  border-bottom: 2px solid rgba(0,0,0,0.35);
+  
   section{
 
     &.story,
@@ -150,10 +164,11 @@ article{
     h3{
       font-size: 32px;
       font-weight: normal;
+      line-height: 1;
       text-transform: capitalize;
     }
     h4{
-      border-top: 1px solid $blue-1;
+      border-top: 1px solid $blue-2;
       padding: 1em 0 0;
       text-transform: uppercase;
     }
@@ -171,6 +186,8 @@ footer{
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: $blue-2;
+  border-top: 2px solid rgba(0,0,0,0.35);
+  border-bottom: 1px solid $blue-1;
   position: sticky;
   bottom: 0;
 
