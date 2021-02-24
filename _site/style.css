@@ -130,19 +130,20 @@ article section img {
 article section button {
   color: #003263;
   background: #00a4e4;
-  border: none;
+  border: 1px solid #00a4e4;
   border-radius: 8px;
   padding: 6px 14px;
   margin: 16px 0 8px;
-  font-size: 14px;
-  font-family: Asap, sans-serif;
+  font-size: 13px;
+  font-family: Asap Bold, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
 article section button:focus, article section button:hover {
   color: #00a4e4;
-  background: #0058AD;
+  background: none;
+  border: 1px solid #00a4e4;
 }
 article section h2 {
   font-size: 16px;
@@ -180,7 +181,7 @@ footer {
 }
 footer p {
   font-size: 12px;
-  color: #00a4e4;
+  color: #83DDFF;
   padding: 0 8px;
 }
 footer nav {
@@ -194,7 +195,7 @@ footer nav li {
   overflow: hidden;
 }
 footer nav li a {
-  color: #00a4e4;
+  color: #83DDFF;
 }
 footer nav li a:focus, footer nav li a:hover {
   color: #C8E4F1;

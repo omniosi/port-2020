@@ -27,7 +27,7 @@ title: development
     {% include header.html %}
 
     <main>
-      <h1>Ornette Coleman designs beautiful websites that are accessible to all and easy to use.</h1>
+      <h1>Ornette Coleman designs functional and beautiful websites that are accessible to all.</h1>
       {% for job in dev.jobs %}
       <article>
         <section class="top">
@@ -45,13 +45,14 @@ title: development
           {% endif %}
 
           <section class="story">
+            <h2>{{job.brand}}</h2>
+            <h3>{{job.title}}</h3>
             {% if job.video %}
             <button onclick="playVideo(this)" class="play">Play Video</button>
+            <!-- <a onclick="playVideo(this)">Play Video</a> -->
             <button onclick="stopVideo(this)" class="stop hide">Stop Video</button>
             {% endif %}
 
-            <h2>{{job.brand}}</h2>
-            <h3>{{job.title}}</h3>
             <p>
               {{job.story}}
             </p>
