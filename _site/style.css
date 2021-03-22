@@ -81,9 +81,6 @@ header {
   top: 0;
   border-radius: 0 0 10px 10px;
 }
-header nav {
-  width: 33%;
-}
 
 nav {
   display: flex;
@@ -246,6 +243,10 @@ footer nav li a svg {
   }
   header img {
     width: 250px;
+  }
+
+  h1 {
+    text-align: left;
   }
 
   article section img, article section video {
