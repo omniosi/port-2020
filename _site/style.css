@@ -76,7 +76,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-evenly;
   box-shadow: 0 3px 10px #003263;
-  padding: 8px;
+  padding: 10px;
   position: sticky;
   top: 0;
   border-radius: 0 0 10px 10px;
@@ -247,6 +247,10 @@ footer nav li a svg {
 
   h1 {
     text-align: left;
+    margin: 0 auto;
+    max-width: 910px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   article section img, article section video {
@@ -256,6 +260,7 @@ footer nav li a svg {
   article section .story {
     width: 30%;
     margin: 0;
+    align-self: flex-end;
   }
   article section .story p {
     margin-bottom: 0;
