@@ -1,14 +1,3 @@
-@font-face {
-  font-family: Asap;
-  src: url(../fonts/Asap/Asap-Regular.ttf);
-  font-display: swap;
-}
-@font-face {
-  font-family: Asap-Bold;
-  src: url(../fonts/Asap/Asap-Bold.ttf);
-  font-display: swap;
-}
-
 $blue-0: #C8E4F1;
 $blue-1: #00a4e4;
 $blue-2: #0058AD;
@@ -36,7 +25,6 @@ body {
   color: $blue-0;
   margin: 0;
   padding: 0;
-  font-family: Asap, sans-serif;
   letter-spacing: 0.03em;
 
   a{
@@ -93,8 +81,6 @@ nav{
     a{
       color: $blue-4;
       text-transform: uppercase;
-      font-family: "Asap Bold", sans-serif;
-      font-size: 15px;
       font-weight: bold;
       letter-spacing: 0.125em;
       text-decoration: none;
@@ -119,7 +105,8 @@ nav{
 }
 h1{
   color: $blue-1;
-  font-size: 15px;
+  // font-size: 15px;
+  font-size: 0.9em;
   font-weight: 400;
   padding: 0.5em 1em;
   text-align: center;
@@ -156,8 +143,8 @@ article{
       border-radius: 8px;
       padding: 6px 14px;
       margin: 16px 0 8px;
-      font-size: 13px;
-      font-family: Asap Bold, sans-serif;
+      // font-size: 13px;
+      font-size: 0.85em;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.04em;
@@ -170,12 +157,14 @@ article{
       }
     }
     h2{
-      font-size: 16px;
+      // font-size: 16px;
+      font-size: 1em;
       color: $blue-1;
       text-transform: uppercase;
     }
     h3{
-      font-size: 32px;
+      // font-size: 32px;
+      font-size: 2em;
       font-weight: normal;
       line-height: 1;
       text-transform: capitalize;
@@ -186,7 +175,8 @@ article{
       text-transform: uppercase;
     }
     p{
-      font-size: 16px;
+      // font-size: 16px;
+      font-size: 1em;
       line-height: 1.35;
     }
     &.scope p{
@@ -206,7 +196,8 @@ footer{
   bottom: 0;
 
   p{
-    font-size: 12px;
+    // font-size: 12px;
+    font-size: 0.75em;
     color: $blue-4;
     padding: 0 8px;
   }
