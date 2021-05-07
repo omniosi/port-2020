@@ -82,7 +82,6 @@ nav li a {
   color: #83DDFF;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 0.125em;
   text-decoration: none;
 }
 nav li a:before {
@@ -113,7 +112,6 @@ h1 {
 article {
   padding: 16px;
   padding-top: 32px;
-  border-top: 1px solid #0058AD;
   border-bottom: 2px solid rgba(0, 0, 0, 0.35);
 }
 article section.story, article section.scope, article section.process, article section.results,
@@ -143,14 +141,16 @@ article section button:focus, article section button:hover {
 }
 article section h2 {
   font-size: 1em;
+  font-weight: 400;
   color: #00a4e4;
-  text-transform: uppercase;
 }
 article section h3 {
-  font-size: 2em;
-  font-weight: normal;
+  font-size: 1.5em;
+  font-weight: 700;
   line-height: 1;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #003263, 2px 2px 1px #83DDFF;
+  letter-spacing: 0.05em;
 }
 article section h4 {
   border-top: 1px solid #0058AD;

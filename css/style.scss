@@ -82,7 +82,6 @@ nav{
       color: $blue-4;
       text-transform: uppercase;
       font-weight: bold;
-      letter-spacing: 0.125em;
       text-decoration: none;
       
       &:before{content:""}
@@ -117,7 +116,7 @@ article{
   padding: 16px;
   padding-top: 32px;
   // border-bottom: 1px solid $blue-2;
-  border-top: 1px solid $blue-2;
+  // border-top: 1px solid $blue-2;
   // border-top: 1px solid $blue-1;
   // border-bottom: 1px solid rgba(255,255,255,0.5);
   // border-top: 2px solid rgba(0,0,0,0.35);
@@ -157,17 +156,21 @@ article{
       }
     }
     h2{
-      // font-size: 16px;
       font-size: 1em;
+      font-weight: 400;
       color: $blue-1;
-      text-transform: uppercase;
     }
     h3{
-      // font-size: 32px;
-      font-size: 2em;
-      font-weight: normal;
+      font-size: 1.5em;
+      font-weight: 700;
       line-height: 1;
-      text-transform: capitalize;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px $blue-3, 2px 2px 1px $blue-4;
+      // text-shadow: 1px 1px 1px $blue-3, 2px 2px 1px $blue-2;
+      // text-shadow: 0 0 2px $blue-0;
+      // text-shadow: 0 0 2px $blue-4;
+      // text-shadow: 0 0 1px $blue-4;
+      letter-spacing: 0.05em;
     }
     h4{
       border-top: 1px solid $blue-2;

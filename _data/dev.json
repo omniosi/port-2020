@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "brand": "canon",
+      "brand": "Canon",
       "title": "project imagina10n",
       "type": "homepage takeover ad",
       "link": null,
@@ -29,8 +29,8 @@
       "results": "The attention to detail in this animation, the ability to get up to speed quickly, and work well within the newyorktimes.com submissions guideline, and finally, the quick turnaround on my portion of this project solidified me as a go to designer/developer for the Canon team at Grey New York. This led to my role in future projects as a Creative Technologist."
     },
     {
-      "brand": "HARVEY NICHOLS",
-      "title": "Responsive Ad",
+      "brand": "Harvey Nichols",
+      "title": "Responsive Referral",
       "type": "Front-End Development & Responsive Design",
       "link": "play/digital-print/nichols-ad/",
       "linktext": "View HTML Ad",
@@ -44,7 +44,7 @@
     },
     {
       "brand": "GREY",
-      "title": "3D printed Trophy",
+      "title": "3D Print Trophy",
       "type": "3D Modeling & Printing",
       "link": null,
       "linktext": null,
@@ -71,8 +71,8 @@
       "results": "This story-telling site was touted as a pride project for my agency, making its way onto our digital show-reel."
     },
     {
-      "brand": "pkboo",
-      "title": "ecommerce site",
+      "brand": "pkboo kids",
+      "title": "pkbookids.com",
       "type": "Website Design & Front-End Development",
       "link": "work/pkboo/index.html",
       "linktext": "View HTML Website",
@@ -86,7 +86,7 @@
     },
     {
       "brand": "Wonderbread",
-      "title": "Facebook Contest",
+      "title": "Honor your Wonder Hero",
       "type": "Website Design & Front-End Development",
       "link": "work/wonderbread/wonder_pages.html",
       "linktext": "View HTML Website",
@@ -100,7 +100,7 @@
     },
     {
       "brand": "Earworms MBT",
-      "title": "interactive video/audio mixer micro-site",
+      "title": "Musical language brain trainer",
       "type": "Website Design & Front-End Development",
       "link": null,
       "linktext": null,

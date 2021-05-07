@@ -1,8 +1,8 @@
 {
   "jobs": [
     {
-      "brand": "pkboo",
-      "title": "kids accesories",
+      "brand": "pkboo kids",
+      "title": "pkboo logo",
       "type": "Logo Design",
       "link": null,
       "linktext": null,
@@ -15,8 +15,8 @@
       "results": "Clients loved the logo and have used it on their business cards and all of their promotional materials. The clients have since commissioned a website design using this logo."
     },
     {
-      "brand": "Procter & Gamble",
-      "title": "Pantene",
+      "brand": "P&G Pantene Pro-V",
+      "title": "Shine",
       "type": "Magazine Ads",
       "link": null,
       "linktext": null,
@@ -43,8 +43,8 @@
       "results": "Not much is known about this project other than the fact that the client was satisfied and the product was on shelves in select stores."
     },
     {
-      "brand": "NYC",
-      "title": "Host Committee",
+      "brand": "NYC Host Committee",
+      "title": "Experience NYC",
       "type": "Brochure",
       "link": null,
       "linktext": null,
@@ -58,7 +58,7 @@
     },
     {
       "brand": "Community Service Society of NY",
-      "title": "5th Annual Cocktail Reception & Raffle",
+      "title": "Come Lounge",
       "type": "Invitation Package",
       "link": null,
       "linktext": null,
