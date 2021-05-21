@@ -1,3 +1,9 @@
+@font-face {
+   font-family: Asap-Bold;
+   src: url(../fonts/Asap/Asap-Bold.ttf);
+   font-display: swap;
+ }
+ 
 $blue-0: #C8E4F1;
 $blue-1: #00a4e4;
 $blue-2: #0058AD;
@@ -160,6 +166,7 @@ article{
       color: $blue-1;
     }
     h3{
+      font-family: Asap-Bold;
       font-size: 1.5em;
       font-weight: 700;
       line-height: 1;
@@ -172,6 +179,7 @@ article{
       letter-spacing: 0.05em;
     }
     h4{
+      font-family: Asap-Bold;
       border-top: 1px solid $blue-2;
       padding: 1em 0 0;
       text-transform: uppercase;

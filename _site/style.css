@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Asap-Bold;
+  src: url(../fonts/Asap/Asap-Bold.ttf);
+  font-display: swap;
+}
 .active {
   pointer-events: none;
 }
@@ -145,6 +150,7 @@ article section h2 {
   color: #00a4e4;
 }
 article section h3 {
+  font-family: Asap-Bold;
   font-size: 1.5em;
   font-weight: 700;
   line-height: 1;
@@ -152,6 +158,7 @@ article section h3 {
   letter-spacing: 0.05em;
 }
 article section h4 {
+  font-family: Asap-Bold;
   border-top: 1px solid #0058AD;
   padding: 1em 0 0;
   text-transform: uppercase;
